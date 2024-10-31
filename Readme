@@ -1,0 +1,92 @@
+ 🛠️ Advanced Active Directory Management System
+
+ Overview
+
+Welcome to the Advanced Active Directory Management System! 🎉 This PowerShell script is crafted to simplify your Active Directory management tasks. With a user-friendly menu interface, it empowers administrators to efficiently handle domain controllers, organizational units (OUs), and user accounts. Developed by Atharv Joshi, this tool is designed to enhance productivity in your AD environment.
+
+ Features
+
+✨ Key Functionalities:
+
+1. Get Domain Controller Information: Quickly access details about all domain controllers, including name, IP address, site, operating system, and forest.
+  
+2. List All OUs in a Parent OU: Input a parent OU to display all child OUs, giving you a clear view of your AD structure.
+
+3. List Users Without EmployeeID: Identify users lacking an EmployeeID within a specified OU effortlessly.
+
+4. Update EmployeeID from CSV: Batch update EmployeeIDs using a CSV file, matching users by their display names.
+
+5. Create New AD User: Simplify user creation with prompts for essential attributes like first name, last name, email, and more.
+
+6. Exit: Exit the script gracefully when done.
+
+ Prerequisites
+
+🛠️ Requirements:
+
+- PowerShell with the Active Directory module installed.
+- Sufficient permissions to perform AD actions.
+- A properly formatted CSV file for EmployeeID updates.
+
+ Usage
+
+1. Clone this repository or download the script.
+2. Open PowerShell as an administrator.
+3. Execute the script using:
+
+==============================
+   powershell
+   .\AD_Manager.ps1
+==============================
+   
+4. Follow the interactive menu to select your desired operation.
+
+ Functions Explained
+
+📝 How It Works:
+
+- Show-Menu: Displays the main menu options.
+- Get-DomainControllerInfo: Fetches and presents info about your domain controllers.
+- List-OUs: Prompts for a parent OU and lists all child OUs.
+- List-UsersWithoutEmployeeID: Prompts for an OU and displays users without an EmployeeID.
+- Update-EmployeeID: Prompts for a CSV file path and an OU, updating EmployeeIDs accordingly.
+- Create-NewADUser: Gathers user details and creates a new AD user.
+
+ Example CSV Format for EmployeeID Update
+
+📋 CSV Structure:
+
+==============================
+csv
+DisplayName,NewEmployeeID
+John Doe,12345
+Jane Smith,67890
+==============================
+
+
+ Error Handling
+
+⚠️ Stay Informed:  
+The script includes error handling to notify users of common issues such as:
+
+- Invalid or empty OU locations.
+- Non-existent CSV file paths.
+- Errors during user creation.
+
+ Notes
+
+🔍 Important:
+
+- Ensure you run the script with appropriate AD permissions.
+
+
+ Author
+
+👤 Atharv Joshi  
+For inquiries or contributions, please contact via [Atharv.Joshi@azelis.com].
+
+ License
+
+🔒 This project is proprietary. Please do not distribute without permission.
+
+For more details, refer to the script comments and inline documentation. Enjoy streamlined AD management! 🌟
