@@ -29,7 +29,7 @@ function Show-Menu {
     Write-Host "3. List Users Without EmployeeID" -ForegroundColor Yellow
     Write-Host "4. Update EmployeeID from CSV Using Display Name" -ForegroundColor Yellow
     Write-Host "5. Create New AD User" -ForegroundColor Yellow
-    Write-Host "6. Disable a User Account" -ForegroundColor Yellow  # New option added
+    Write-Host "6. Disable a User Account" -ForegroundColor Yellow  # New option added (Move to offboarded employees OU in next version)
     Write-Host "7. Exit" -ForegroundColor Yellow
     Write-Host 
 }
